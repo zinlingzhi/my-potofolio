@@ -4,7 +4,9 @@ const config: GatsbyConfig = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-transformer-typescript-css-modules"
+  ],
 }
 
 export default config
