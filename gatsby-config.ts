@@ -10,11 +10,12 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/blog`
-      }
+        name: `data`,
+        path: `${__dirname}/src/blog/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
     },
   ],
 }
