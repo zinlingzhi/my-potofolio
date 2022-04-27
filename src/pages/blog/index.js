@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { Link, graphql } from 'gatsby';
 import Layout from '../../components/layout';
-import { Link, graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
+
+
 
 const BlogPage = ({data}) => {
   return (
@@ -15,7 +16,6 @@ const BlogPage = ({data}) => {
               </Link>
             </h2>
           <p>Posted: {node.frontmatter.date}</p>
-
         </article>
       ))
     }
