@@ -1,9 +1,8 @@
 {
-  "name": "my-potofolio",
+  "name": "potofolio",
   "version": "1.0.0",
   "private": true,
-  "description": "my-potofolio",
-  "author": "zinlingzhi",
+  "description": "potofolio",
   "keywords": [
     "gatsby"
   ],
@@ -12,29 +11,11 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "gatsby": "^4.11.2",
-    "gatsby-plugin-css-modules-typings": "^1.0.1",
-    "gatsby-plugin-image": "^2.12.1",
-    "gatsby-plugin-mdx": "^3.12.1",
-    "gatsby-plugin-sharp": "^4.12.1",
-    "gatsby-plugin-styled-components": "^5.12.1",
-    "gatsby-plugin-typescript": "4.12.1",
-    "gatsby-source-filesystem": "^4.12.1",
-    "gatsby-transformer-typescript-css-modules": "^1.0.14",
+    "gatsby": "^4.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.23",
-    "@types/react": "^17.0.44",
-    "@types/react-dom": "^17.0.15",
-    "typescript": "^4.6.3",
-    "typings-for-css-modules-loader": "^1.7.0"
   }
 }
