@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import { PropTypes } from 'prop-types';
 import { Head, Nav } from '@components';
 import { GlobalStyle, theme } from '@styles';
-import {Loader} from '@components';
+import { Loader, Social, Email, Footer } from '@components';
 const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,9 +16,9 @@ const Layout = ({ children, location }) => {
 
   const handleExternalLinks = () => {
     const allLinks = Array.from(document.querySelectorAll('a'));
-    if(allLinks.length > 0) {
+    if (allLinks.length > 0) {
       allLinks.forEach(link => {
-        if(link.host !== window.location.host) {
+        if (link.host !== window.location.host) {
           link.setAttribute('rel', 'noopener noreferrer');
           link.setAttribute('target', '_blank');
         }
@@ -26,13 +26,13 @@ const Layout = ({ children, location }) => {
     }
   };
 
-  useEffect(()=>{
-    if(isLoading){
+  useEffect(() => {
+    if (isLoading) {
       return;
     }
 
 
-    if(location.hash) {
+    if (location.hash) {
       const id = location.hash.substring(1);
       setTimeout(() => {
         const element = document.getElementById(id);
@@ -57,14 +57,20 @@ const Layout = ({ children, location }) => {
           </a>
 
           {isLoading && isHome ? (
-              <Loader finishLoading={() => setIsLoading(false)} />
-            ):(
-              <StyledContent>
-                <Nav isHome={isHome} />
-              </StyledContent>
-            )
+            <Loader finishLoading={() => setIsLoading(false)} />
+          ) : (
+            <StyledContent>
+              <Nav isHome={isHome} />
+              <Social isHome={isHome} />
+              <Email isHome={isHome} />
+              <div id="content">
+                {children}
+                <Footer />
+              </div>
+            </StyledContent>
+          )
           }
-          
+
         </ThemeProvider>
       </div>
     </>
