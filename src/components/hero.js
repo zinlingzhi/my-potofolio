@@ -65,7 +65,7 @@ const Hero = () => {
       <p style={{width: '100%'}}>
         I’m an Senior Frontend Developer in multi-languages and frameworks. Totally Eleven Years of experience in software developer roles since 2011 when I graduate the university.
         My strongest skills are Java and Javascript such as JSP, Java Spring Boot, Node.js and Typescript, React.js and Gatsby.js, Ember.js, etc.  
-          For years, I am working as a {' '}
+          For Last 4 years, I am working as a {' '}
         <a href="https://www.fiverr.com/zinlingzhi?up_rollout=true" target="_blank" >
           Freelancer
         </a>
