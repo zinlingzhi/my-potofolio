@@ -58,15 +58,15 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">LingZhi Jin.</h2>;
+  const two = <h2 className="big-heading">Jin LingZhi.</h2>;
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <>
       <p style={{width: '100%'}}>
-        I’m a Expereienced Full Stack Developer in multi-languages and frameworks. Eleven Years of experience in software developer roles including Frontend, Backend and Devops.
-        I worked as a Frontend developer for 5 years and Backend developer for 7 years. My strongest skills are Java, C#, Python and Javascript, React.js, Angular.js, Vue.js. I have 3 years of experience in AWS and Azure and GCP.  
-          For last 3 years, I am working as a {' '}
-        <a href="#" target="_blank" >
+        I’m an Senior Frontend Developer in multi-languages and frameworks. Totally Eleven Years of experience in software developer roles since 2011 when I graduate the university.
+        My strongest skills are Java and Javascript such as JSP, Java Spring Boot, Node.js and Typescript, React.js and Gatsby.js, Ember.js, etc.  
+          For years, I am working as a {' '}
+        <a href="https://www.fiverr.com/zinlingzhi?up_rollout=true" target="_blank" >
           Freelancer
         </a>
         .

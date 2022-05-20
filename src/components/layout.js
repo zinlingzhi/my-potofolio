@@ -9,7 +9,6 @@ const StyledContent = styled.div`
   flex-direction: column;
   min-height: 100vh;
 `
-
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
   const [isLoading, setIsLoading] = useState(isHome);
@@ -30,8 +29,6 @@ const Layout = ({ children, location }) => {
     if (isLoading) {
       return;
     }
-
-
     if (location.hash) {
       const id = location.hash.substring(1);
       setTimeout(() => {
@@ -42,7 +39,6 @@ const Layout = ({ children, location }) => {
         }
       }, 0)
     }
-
     handleExternalLinks();
   }, [isLoading, location.hash]);
   return (
@@ -51,26 +47,24 @@ const Layout = ({ children, location }) => {
       <div id="root">
         <ThemeProvider theme={theme}>
           <GlobalStyle />
-
           <a className='skip-to-content' href="#content">
             Skip to Content
           </a>
-
-          {isLoading && isHome ? (
-            <Loader finishLoading={() => setIsLoading(false)} />
-          ) : (
-            <StyledContent>
-              <Nav isHome={isHome} />
-              <Social isHome={isHome} />
-              <Email isHome={isHome} />
-              <div id="content">
-                {children}
-                <Footer />
-              </div>
-            </StyledContent>
-          )
+          {
+            isLoading && isHome ? (
+              <Loader finishLoading={() => setIsLoading(false)} />
+            ) : (
+              <StyledContent>
+                <Nav isHome={isHome} />
+                <Social isHome={isHome} />
+                <Email isHome={isHome} />
+                <div id="content">
+                  {children}
+                  <Footer />
+                </div>
+              </StyledContent>
+            )
           }
-
         </ThemeProvider>
       </div>
     </>
