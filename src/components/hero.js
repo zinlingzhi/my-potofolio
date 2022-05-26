@@ -66,7 +66,7 @@ const Hero = () => {
         I’m an Senior Frontend Developer in multi-languages and frameworks. Totally Eleven Years of experience in software developer roles since 2011 when I graduate the university.
         My strongest skills are Java and Javascript such as JSP, Java Spring Boot, Node.js and Typescript, React.js and Gatsby.js, Ember.js, etc.  
           For Last 4 years, I am working as a {' '}
-        <a href="https://www.fiverr.com/zinlingzhi?up_rollout=true" target="_blank" >
+        <a href="https://www.fiverr.com/zinlingzhi?public_mode=true" target="_blank" >
           Freelancer
         </a>
         .
@@ -76,10 +76,10 @@ const Hero = () => {
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="https://medium.com/@zinlingzhi"
       target="_blank"
       rel="noreferrer">
-      Check out my resources
+      Check out my blogs
     </a>
   );
 

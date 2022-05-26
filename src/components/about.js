@@ -126,7 +126,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Next.js', 'Angular', 'Vue.js', 'Redux','Node.js', 'Express.js', 'GraphQL'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -137,28 +137,25 @@ const About = () => {
           <div>
             <p>
               Hello! My name is LingZhi and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2011 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
+              interest in web development started back in 2011 when I decided to try building custom
+              UI pages — turns out hacking together a custom button and input fields taught me a lot
               about HTML &amp; CSS!
             </p>
 
             <p>
               Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
+              <a href="https://yidatec.com//">an advertising agency</a>,{' '}
+              <a href="https://huatek.com/">a start-up</a>. My
               main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
+              experiences at <a href="https://www.fiverr.com/zinlingzhi?public_mode=true">Freelancer</a> for a variety of
               clients.
             </p>
-
             <p>
               I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
+              <a href="https://medium.com/@zinlingzhi/changes-of-the-user-interface-development-7db454818f7e">
+                write a blog about changes in User Interface
               </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
+              that covers everything you should know about the website design in interface using Node.js
               &amp; React.
             </p>
 
